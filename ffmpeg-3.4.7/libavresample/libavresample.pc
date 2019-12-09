@@ -1,0 +1,14 @@
+prefix=/home/zero/android/workspace/ffmpeg/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/zero/android/workspace/ffmpeg/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/lib
+includedir=/home/zero/android/workspace/ffmpeg/libs/ffmpeg-x264-fdkaac-merge/armeabi-v7a/include
+
+Name: libavresample
+Description: Libav audio resampling library
+Version: 3.7.0
+Requires: libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavresample -lm
+Libs.private: 
+Cflags: -I${includedir}
